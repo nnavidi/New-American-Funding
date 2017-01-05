@@ -1,0 +1,42 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="jekyll-gulp-sass-browser-sync">jekyll-gulp-sass-browser-sync</h1>
+<p>A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync</p>
+<p>Here&#39;s a 1.5min <a href="http://quick.as/pvrslgx">screencast</a> showing what you get.</p>
+<p>And here&#39;s a GIF showing the CSS injecting.</p>
+<p><img src="http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif" alt="GIF"></p>
+<h2 id="system-preparation">System Preparation</h2>
+<p>To use this starter project, you&#39;ll need the following things installed on your machine.</p>
+<ol>
+<li><a href="http://jekyllrb.com/">Jekyll</a> - <code>$ gem install jekyll</code></li>
+<li><a href="http://nodejs.org">NodeJS</a> - use the installer.</li>
+<li><a href="https://github.com/gulpjs/gulp">GulpJS</a> - <code>$ npm install -g gulp</code> (mac users may need sudo)</li>
+</ol>
+<h2 id="local-installation">Local Installation</h2>
+<ol>
+<li>Clone this repo, or download it into a directory of your choice.</li>
+<li>Inside the directory, run <code>npm install</code>.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p><strong>development mode</strong></p>
+<p>This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc etc.</p>
+<pre><code class="lang-shell">$ gulp
+</code></pre>
+<p><strong>jekyll</strong></p>
+<p>As this is just a Jekyll project, you can use any of the commands listed in their <a href="http://jekyllrb.com/docs/usage/">docs</a></p>
+<h2 id="deploy-with-gulp">Deploy with Gulp</h2>
+<p>You can easily deploy your site build to a gh-pages branch. First, follow the instructions at <a href="https://github.com/rowoot/gulp-gh-pages">gulp-gh-pages</a> to get your branch prepared for the deployment and to install the module. Then, in <code>gulpfile.js</code> you&#39;ll want to include something like the code below. <code>gulp.src()</code> needs to be the path to your final site folder, which by default will be <code>_site</code>. If you change the <code>destination</code> in your <code>_config.yml</code> file, be sure to reflect that in your gulpfile.</p>
+<pre><code class="lang-javascript">var deploy = require(&quot;gulp-gh-pages&quot;);
+
+gulp.task(&quot;deploy&quot;, [&quot;jekyll-build&quot;], function () {
+    return gulp.src(&quot;./_site/**/*&quot;)
+        .pipe(deploy());
+});
+</code></pre>
+
+      </body>
+    </html>
