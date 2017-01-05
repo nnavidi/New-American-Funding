@@ -67,7 +67,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -290,7 +291,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -325,7 +327,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -433,6 +436,32 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 10px;
   line-height: 1.2; }
 
+.float-r {
+  float: right; }
+
+.float-l {
+  float: left; }
+
+.float-n {
+  float: none; }
+
+.nav {
+  float: right; }
+
+.nav button {
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
+
+.nav-tabs {
+  border-bottom: 0px !important; }
+
+.nav-tabs li a {
+  -webkit-border-radius: 0px !important;
+          border-radius: 0px !important; }
+
+.nav-tabs li a {
+  padding: 16px !important; }
+
 p {
   margin: 0 0 20px 0; }
 
@@ -464,6 +493,8 @@ body {
 a {
   color: #0074D9;
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
   a:hover, a:focus {
     color: #40a6ff; }
