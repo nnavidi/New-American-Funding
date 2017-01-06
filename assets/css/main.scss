@@ -5,3 +5,27 @@
 @import "1-base/vars";
 @import "1-base/links";
 @import "1-base/media-queries";
+
+
+@mixin tablet {
+  @media only screen and (min-width: 768px){
+    @content;
+  }
+}
+.des1, .des2, .des3 {
+  background-color: #f3f3f4;
+  padding: 25px !important;
+  min-height: 180px !important;
+  margin: 0px 3px;
+}
+
+
+@include tablet{
+  .des1, .des2, .des3 {
+    min-height: 238px !important;
+    margin: 3px 3px;
+  }
+  .descrip {
+    max-height: none;
+  }
+}

@@ -583,11 +583,14 @@ li:first-child a {
   max-height: 200px;
   clear: both; }
 
+.saf {
+  margin: 120px 0px; }
+
 .des1, .des2, .des3 {
   background-color: #f3f3f4;
   padding: 25px !important;
   min-height: 180px !important;
-  margin: 120px 3px; }
+  margin: 0 3px; }
 
 .leader {
   clear: both; }
@@ -596,8 +599,9 @@ li:first-child a {
   -webkit-border-radius: 0px !important;
   border-radius: 0px !important;
   background: #006993 !important;
-  padding: 10px 30px;
-  color: white; }
+  margin: 14px 110px;
+  color: white;
+  padding: 11px; }
 
 .ldrimg {
   opacity: 0.2;
@@ -615,6 +619,7 @@ li:first-child a {
 
 .ldrinfo {
   margin: 40px auto 6px;
+  text-align: center;
   clear: both; }
 
 .ldrinfo img {
@@ -628,6 +633,37 @@ li:first-child a {
 
 .ldrposition, .ldrtag {
   text-transform: uppercase; }
+
+.partcult {
+  background-image: url("/assets/images/I123.jpg");
+  max-height: 1100px;
+  padding: 120px 0px 180px !important; }
+
+.cult p {
+  margin-bottom: 25px;
+  font-size: 18px; }
+
+.cult .ldrtag {
+  margin: 14px 320px; }
+
+.culttitle {
+  font-size: 32px;
+  color: #006993;
+  word-spacing: 4px;
+  margin: 90px 0px 25px;
+  text-align: center;
+  padding: 1px 100px; }
+
+.culttitlebig {
+  font-size: 42px;
+  color: #006993;
+  word-spacing: 4px; }
+
+.cult .learn {
+  margin: 10px 44px; }
+
+.cult .mybtn {
+  margin: 0px 260px !important; }
 
 a:active, a:hover, a:visited {
   text-decoration: none !important; }
@@ -671,3 +707,16 @@ a {
   a:hover, a:focus {
     color: #40a6ff;
     text-decoration: none; }
+
+.des1, .des2, .des3 {
+  background-color: #f3f3f4;
+  padding: 25px !important;
+  min-height: 180px !important;
+  margin: 0px 3px; }
+
+@media only screen and (min-width: 768px) {
+  .des1, .des2, .des3 {
+    min-height: 238px !important;
+    margin: 3px 3px; }
+  .descrip {
+    max-height: none; } }
