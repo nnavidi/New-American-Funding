@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
 	head
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-		
+
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
 
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
@@ -10,16 +10,47 @@ html(lang="en")
 	body
 		.container
 			.row.menu
-				.col-xs-3
-					a(href="") 
+				.col-sm-3.logo
+					a(href="")
 						img(src="/assets/images/NAF_Logo.png")
-			 
-				.col-xs-9
+
+				.col-sm-9
 					ul.nav.nav-tabs
-						li: a(href="") About
-						li: a(href="") Products
-						li: a(href="") Support
-						li: a(href="") Media
-						li: a(href="") News
+						li: a(href="").med.upper.active About
+						li: a(href="").med.upper Products
+						li: a(href="").med.upper Support
+						li: a(href="").med.upper Media
+						li: a(href="").med.upper News
 						li
-							button.btn.btn-default.navbar-btn(type="submit") JOIN US
+							button.btn.btn-default.navbar-btn.xmed(type="submit") JOIN US
+
+			.row
+				.col-sm-12.header
+					.xlarge.cap.naf Work with new american funding
+					.hdrtxt.big We're invinting talented people to join our company focused on longevity.
+					.row.hdrbtn
+						.col-sm-4
+						.col-sm-4
+							button.btn.btn-default.navbar-btn.xmed.desede(type="submit") JOIN US
+							a(href=""): .mybtn
+								.learn.big.upper learn more
+								.glyphicon.glyphicon-play.inbtn
+
+						.col-sm-4
+
+			.row.descrip
+				.col-sm-3
+				.col-sm-2.des1
+					P We are a <h5>Direct Lender, Seller & Servicer</h5>
+					P Fannie Mae, Freddie Mac, & Ginnie Mae
+				.col-sm-2.des2
+					P We are a team of <h5>over 1800 employees with over 90+ branches</h5> <p>in operation nationwide</p>
+				.col-sm-2.des3
+					p We fund over <h5>$900 million</h5> <p>in home loans every month</p>
+				.col-sm-3
+
+			.row.leader
+				.col-sm-5
+				.col-sm-2
+					.leadertag.big Leadership
+				.col-sm-5
