@@ -635,7 +635,7 @@ li:first-child a {
   text-transform: uppercase; }
 
 .partcult {
-  background-image: url("/assets/images/I123.jpg");
+  background-image: url("/assets/images/reunion4.jpg");
   max-height: 1100px;
   padding: 120px 0px 180px !important; }
 
@@ -664,6 +664,24 @@ li:first-child a {
 
 .cult .mybtn {
   margin: 0px 260px !important; }
+
+.carousel {
+  padding: 25px 35px; }
+
+.carousel .xmed {
+  font-weight: 500 !important;
+  letter-spacing: 0.5px; }
+
+.loremname {
+  text-transform: capitalize;
+  color: #0078a1; }
+
+.ldrtext .glyphicon {
+  font-size: 56px;
+  font-weight: 100;
+  color: #e64a00;
+  float: left;
+  margin: 0px 20px; }
 
 a:active, a:hover, a:visited {
   text-decoration: none !important; }
