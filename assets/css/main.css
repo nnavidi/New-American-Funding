@@ -489,11 +489,18 @@ h1, h2, h3, h4, h5, h6 {
   float: right; }
 
 .nav button {
-  padding: 12px 43px !important;
+  padding: 15px 48px !important;
   -webkit-border-radius: 0px;
           border-radius: 0px;
   background: #e64900;
   color: white; }
+
+ul.menuu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff; }
 
 .nav-tabs {
   border-bottom: 0px !important; }
@@ -553,15 +560,14 @@ li:first-child a {
           border-radius: 0px !important; }
 
 .mybtn {
-  max-width: 55% !important;
   display: -webkit-inline-box !important;
   display: -webkit-inline-flex !important;
   display: -ms-inline-flexbox !important;
   display: inline-flex !important;
   margin: 0 0 5px !important;
   border: 3px solid #e64900 !important;
+  border-radius: 0px !important;
   -webkit-border-radius: 0px !important;
-          border-radius: 0px !important;
   color: #e64900 !important; }
 
 .mes .navbar-btn {
@@ -577,7 +583,7 @@ li:first-child a {
   float: left; }
 
 .learn {
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   margin: 10px 0px 10px 24px; }
 
@@ -585,33 +591,42 @@ li:first-child a {
   font-size: x-large;
   padding: 11px; }
 
-.descrip {
-  background-color: #dedede;
-  max-height: 200px;
-  clear: both; }
+.grayback {
+  height: 180px;
+  background-color: #dedede; }
 
 .saf {
-  margin: 120px 0px; }
+  margin: -90px 0px 0px; }
 
 .des1, .des2, .des3 {
   background-color: #f3f3f4;
   padding: 25px !important;
   min-height: 180px !important;
-  margin: 0 3px; }
+  margin: 0 1%;
+  width: 31.33%;
+  float: left; }
 
 .leader {
-  margin: 80px auto 40px;
+  text-align: center;
+  padding: 100px 2px 10px;
   clear: both; }
 
 .ldrtag {
   -webkit-border-radius: 0px !important;
   border-radius: 0px !important;
-  background: #006993 !important;
-  margin: 14px 110px;
+  background-color: #006993 !important;
   color: white;
-  padding: 11px;
-  font-weight: 100;
-  letter-spacing: 0.05em; }
+  padding: 11px 30px;
+  font-weight: 300;
+  display: -webkit-inline-box !important;
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  margin: 0px auto !important;
+  width: auto; }
+
+.cult .ldrtag {
+  font-weight: 500; }
 
 .ldrimg {
   opacity: 0.2;
@@ -625,7 +640,8 @@ li:first-child a {
   background-color: #f3f3f4; }
 
 .ldr1, .ldr2, .ldr3 {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 7px; }
 
 .ldr2 .ldrname, .ldr3 .ldrname {
   background-color: white !important; }
@@ -660,12 +676,12 @@ li:first-child a {
   margin: 14px 320px; }
 
 .culttitle {
+  width: 83%;
   font-size: 32px;
   color: #006993;
-  word-spacing: 4px;
-  margin: 90px 0px 25px;
-  text-align: center;
-  padding: 1px 100px; }
+  word-spacing: 2px;
+  margin: 90px auto 25px;
+  text-align: center; }
 
 .culttitlebig {
   font-size: 42px;
@@ -673,10 +689,14 @@ li:first-child a {
   word-spacing: 4px; }
 
 .cult .learn {
-  margin: 10px 44px; }
+  margin: 10px 30px; }
 
 .cult .mybtn {
-  margin: 0px 260px !important; }
+  margin: 0px auto !important;
+  width: auto; }
+
+.partcult .cult {
+  text-align: center; }
 
 .carousel {
   padding: 25px 35px;
@@ -750,15 +770,67 @@ a {
     color: #40a6ff;
     text-decoration: none; }
 
-.des1, .des2, .des3 {
-  background-color: #f3f3f4;
-  padding: 25px !important;
-  min-height: 180px !important;
-  margin: 0px 3px; }
-
-@media only screen and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .des1, .des2, .des3 {
-    min-height: 238px !important;
+    min-height: 202px !important;
     margin: 3px 3px; }
+  .cult .culttitle {
+    width: 100% !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .des1, .des2, .des3 {
+    margin: 1% 0% !important;
+    width: 100%; }
+  .description, .saf {
+    padding: 0% !important; }
+  .footer {
+    text-align: center; }
+  .denade button {
+    float: none; }
+  .cult {
+    padding: 0px 50px !important; }
+  .culttitle {
+    width: 100% !important; }
+  .hdrtxt {
+    max-width: 50%; }
+  .carousel {
+    padding: 25px 50px !important; } }
+
+@media (max-width: 767px) {
+  .des1, .des2, .des3 {
+    margin: 1% 0% !important;
+    width: 100%; }
+  .description, .saf {
+    padding: 0% !important; }
+  .culttitle {
+    width: 100%;
+    font-size: 24px;
+    word-spacing: 0px; }
+  .culttitlebig {
+    font-size: 32px; }
+  .cult {
+    padding: 0px 50px !important; }
+  .denade button {
+    float: none; }
+  .carousel {
+    padding: 25px 50px !important;
+    margin-bottom: 0px; }
+  .naf {
+    padding-top: 70px;
+    margin-top: 0px;
+    font-size: 36px; }
+  .hdrtxt {
+    max-width: 67%;
+    margin-bottom: 30px; }
+  .mes, .tar .navbar-btn {
+    float: none;
+    margin: 0px auto 15px !important;
+    text-align: center; }
+  .hdrbtn {
+    text-align: center;
+    margin: 30px auto 0px; }
+
+/*
   .descrip {
     max-height: none; } }
+*/

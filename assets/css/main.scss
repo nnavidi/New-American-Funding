@@ -6,26 +6,160 @@
 @import "1-base/links";
 @import "1-base/media-queries";
 
-
-@mixin tablet {
-  @media only screen and (min-width: 768px){
+@mixin Largedesktop {
+  @media (min-width: 1200px) {
     @content;
   }
 }
-.des1, .des2, .des3 {
-  background-color: #f3f3f4;
-  padding: 25px !important;
-  min-height: 180px !important;
-  margin: 0px 3px;
+@mixin Desktop {
+  @media (min-width: 992px) and (max-width: 1199px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 991px){
+    @content;
+  }
+}
+
+@mixin mob {
+  @media (max-width: 767px){
+    @content;
+  }
+}
+@mixin xsmob {
+  @media (max-width: 480px){
+    @content;
+  }
 }
 
 
+
+
+@include Desktop{
+  .des1, .des2, .des3 {
+    min-height: 202px !important;
+    margin: 3px 3px;
+  }
+  .cult .culttitle {
+    width: 100% !important;
+  }
+}
+
 @include tablet{
   .des1, .des2, .des3 {
-    min-height: 238px !important;
+    margin: 1% 0% !important;
+    width: 100%;
+  }
+  .description, .saf{
+    padding: 0% !important;
+  }
+  .footer {
+    text-align: center;
+  }
+  .denade button {
+    float: none;
+  }
+  .cult {
+    padding: 0px 50px !important;
+  }
+  .culttitle {
+    width: 100% !important;
+  }
+  .hdrtxt{
+    max-width: 50%;
+  }
+  .carousel{
+    padding: 25px 50px !important;
+  }
+
+}
+
+@include mob{
+  .des1, .des2, .des3 {
+    margin: 1% 0% !important;
+    width: 100%;
+  }
+  .description, .saf{
+    padding: 0% !important;
+  }
+  .culttitle {
+    width: 100%;
+    font-size: 24px;
+    word-spacing: 0px;
+  }
+  .culttitlebig{
+    font-size: 32px;
+  }
+  .cult {
+    padding: 0px 50px !important;
+  }
+  .denade button {
+    float: none;
+  }
+  .carousel{
+    padding: 25px 50px !important;
+    margin-bottom: 0px;
+  }
+  .naf{
+    padding-top: 70px;
+    margin-top: 0px;
+    font-size: 36px;
+  }
+  .hdrtxt {
+    max-width: 67%;
+    margin-bottom: 30px;
+  }
+  .mes, .tar .navbar-btn{
+    float: none;
+    margin: 0px auto 15px !important;
+    text-align: center;
+  }
+  .hdrbtn {
+    text-align: center;
+    margin: 30px auto 0px;
+  }
+  .nav li:not(:first-child) {
+    display: none;
+  }
+  .nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive li {
+    float: none;
+    display: inline;
+  }
+  .nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
+
+/*
+min-->768
+@include tablet{ min-->768
+  .des1, .des2, .des3 {
+    min-height: 202px !important;
     margin: 3px 3px;
   }
   .descrip {
     max-height: none;
   }
+
+  .culttitle {
+    width: 100%;
+  }
+
 }
+*/
