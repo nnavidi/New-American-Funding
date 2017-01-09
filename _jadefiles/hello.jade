@@ -9,18 +9,28 @@ html(lang="en")
 
 	body
 		.container
-			.row.menu
-				.col-sm-3.logo
-					a(href="")
+		nav(class="navbar navbar-default")
+			div(class="container-fluid")
+				div(class="navbar-header")
+					button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#myNavbar", aria-expanded="false",)
+						span(class="sr-only") Toggle navigation
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					a(class="navbar-brand", href="http://www.newamericanfunding.com/")
 						img(src="/assets/images/NAF_Logo.png")
-
-				.col-sm-9
-					ul.nav.nav-tabs
-						li: a(href="").med.upper.active About
-						li: a(href="").med.upper Products
-						li: a(href="").med.upper Support
-						li: a(href="").med.upper Media
-						li: a(href="").med.upper News
+				div(class="collapse navbar-collapse", id="myNavbar")
+					ul(class="nav navbar-nav navbar-right")
+						li(class="active")
+							a(href="").med.upper About
+						li
+							a(href="/").med.upper Products
+						li
+							a(href="#").med.upper Support
+						li
+							a(href="/media").med.upper Media
+						li
+							a(href="").med.upper News
 						li
 							button.btn.btn-default.navbar-btn.xmed(type="submit") JOIN US
 
@@ -36,17 +46,21 @@ html(lang="en")
 								.learn.big.upper learn more
 								.glyphicon.glyphicon-play.inbtn
 
+			.row.grayback
+				.col-xs-12
+
 			.row.descrip
 				.col-md-12.saf
-					.col-md-3
-					.col-md-2.des1
-						p We are a <h5>Direct Lender, Seller & Servicer</h5>
-						p Fannie Mae, Freddie Mac, & Ginnie Mae
-					.col-md-2.des2
-						p We are a team of <h5>over 1800 employees with over 90+ branches</h5> <p>in operation nationwide</p>
-					.col-md-2.des3
-						p We fund over <h5>$900 million</h5> <p>in home loans every month</p>
-					.col-md-3
+					.col-md-2
+					.col-md-8.description
+						.des1
+							p We are a <h5>Direct Lender, Seller & Servicer</h5>
+							p Fannie Mae, Freddie Mac, & Ginnie Mae
+						.des2
+							p We are a team of <h5>over 1800 employees with over 90+ branches</h5> <p>in operation nationwide</p>
+						.des3
+							p We fund over <h5>$900 million</h5> <p>in home loans every month</p>
+					.col-md-2
 
 			.row.leader
 				.col-md-4
